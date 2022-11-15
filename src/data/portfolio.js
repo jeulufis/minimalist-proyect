@@ -16,5 +16,10 @@ export default [
       imgUrl: '/assets/ai-nerf-gun.jpg',
       stack: ['Python', 'C++', 'Robotics'],
       link: 'https://youtu.be/A8eegxL82PI',
+   },  {
+      title: 'AI Nerf Gun',
+      imgUrl: '/assets/ai-nerf-gun.jpg',
+      stack: ['Python', 'C++', 'Robotics'],
+      link: 'https://youtu.be/A8eegxL82PI',
    },
 ]

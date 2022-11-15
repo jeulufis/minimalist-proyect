@@ -1,21 +1,33 @@
 import React from 'react';
 import portfolio from '../data/portfolio';
 import PortfolioItem from './PortfolioItem';
+import Title from './Title';
 
 function Portfolio() {
    return (
-      <div className="flex flex-col md:flex-row items-center justify-center">
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <>
+     
+     <div className='pl-0 md:pl-[13.5rem] '>
+      
+      <Title>Projects</Title>
+      </div>
+      <div className="flex flex-col mb-10 mx-auto">
+         <div className="flex justify-center items-center">
+         <div className='flex flex-col w-full md:w-7/12'>
+         <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
             {portfolio.map(project => (
                <PortfolioItem 
-                  imgUrl={project.imgUrl}
-                  title={project.title}
-                  stack={project.stack}
-                  link={project.link}
+                  ${...project}
                />
             ))}
          </div>
+         </div>
+         
+         </div>
       </div>
+      
+      </>
+      
    )
 }
 
