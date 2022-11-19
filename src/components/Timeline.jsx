@@ -18,7 +18,7 @@ function Timeline() {
                ))}
            <div className='pt-5'>
            <Title>I ♥</Title>
-           <p className='text-sm'>Music, Read, Walk,<span className='text-blue-500 dark:text-pink-500'>Video Games</span>, Lear New Languag </p>
+           <p className='text-sm'>Music, Read, Walk,<span className='text-blue-500 dark:text-pink-500'>Video Games</span>, Lear New Language.</p>
            </div>
          </div>
       </div>
