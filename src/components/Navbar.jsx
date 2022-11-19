@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "/assets/logo.png";
 
+
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
@@ -11,13 +12,16 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
 
+ 
+
+  
   return (
-    <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95">
-      <div className="md:flex items-center justify-center  py-3 md:px-10 px-7">
+    <div  className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95">
+      <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
         <div className="cursor-pointer flex items-center text-gray-800">
           <img
             src={logo}
-            className="w-7 h-7 hover:rotate-12 "
+            className="w-7 h-7 hover:rotate-12"
           />
         </div>
 
@@ -39,9 +43,9 @@ const Navbar = () => {
             <li key={link.name} className="md:ml-8 text-sm md:my-0 my-7">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-gray-400 "
+                className="text-gray-800 hover:text-gray-500 "
               >
-                {link.name}
+                {link.name} 
               </a>
             </li>
           ))}
