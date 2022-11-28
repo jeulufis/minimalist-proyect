@@ -72,7 +72,7 @@ const Navbar = () => {
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
         <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
           <img src={logo} className="w-6 h-6 hover:rotate-12 mr-1" />
-          <span className="text-sm font-semibold">Juan Eulufí</span>
+          <span className="text-sm font-semibold tracking-wider">Juan Eulufí</span>
         </div>
 
         <div
