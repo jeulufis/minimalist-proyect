@@ -17,9 +17,9 @@ export default [
       stack: ['Python', 'C++', 'Robotics'],
       link: 'https://youtu.be/A8eegxL82PI',
    },  {
-      title: 'AI Nerf Gun',
-      imgUrl: '/assets/ai-nerf-gun.jpg',
-      stack: ['Python', 'C++', 'Robotics'],
-      link: 'https://youtu.be/A8eegxL82PI',
+      title: 'Tesla Clone',
+      imgUrl: '/assets/tesla_clone.jpg',
+      stack: ['React','Styled Components', 'React Reveal','Material Icons'],
+      link: 'https://clone-tesla-swart.vercel.app/',
    },
 ]
