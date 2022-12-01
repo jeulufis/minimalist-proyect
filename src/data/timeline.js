@@ -18,6 +18,10 @@ export default [
   },
   {
     year: "2022",
+    title: "Qualified Computer Programmer/Analyst.",
+  },
+  {
+    year: "2022",
     title:
       "Studying the Computer Engineering Program, School of Engineering at the Professional Institute of Chile.",
   },
