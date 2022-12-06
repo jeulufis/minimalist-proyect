@@ -17,13 +17,16 @@ function Timeline() {
           />
         ))}
         <div className="pt-5">
-          <Title>I ♥</Title>
-          <p className="text-sm">
+          <Title>I <span className="text-red-500">♥</span></Title>
+          <p className="text-sm indent-3 lg:indent-5">
             Music, Read, Walk,
             <span className="text-blue-500 dark:text-pink-500">
-              Video Games
+              {" "}Video Games
             </span>
-            , Lear New Language.
+            , Lear New Language, 
+            <span className="text-blue-500 dark:text-pink-500">
+               {' '}Meditate
+            </span>.
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import logo from "/assets/logo.png";
+import {AiFillGithub} from 'react-icons/ai'
+import logo from "/assets/logo1.svg";
 
 const Navbar = () => {
   let Links = [
@@ -7,7 +8,7 @@ const Navbar = () => {
     { name: "Projects", link: "/" },
     { name: "Bio", link: "/" },
     { name: "On the web", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Source", logo: <AiFillGithub />, link: "https://github.com/itodev-source/minimalist-proyect" },
   ];
   let [open, setOpen] = useState(false);
 
@@ -71,13 +72,13 @@ const Navbar = () => {
     <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95 dark:bg-[#202023]">
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
         <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
-          <img src={logo} className="w-6 h-6 hover:rotate-12 mr-1" />
+          <img src={logo} className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500" />
           <span className="text-sm font-semibold tracking-wider">Juan Eulufí</span>
         </div>
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-lg absolute right-8 top-[14px] cursor-pointer md:hidden dark:text-black"
+          className="text-lg absolute right-8 top-[14px] cursor-pointer md:hidden dark:text-white"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
@@ -91,9 +92,13 @@ const Navbar = () => {
             <li key={link.name} className="md:ml-8 text-sm md:my-0 my-7">
               <a
                 href={link.link}
-                className="text-gray-800 dark:text-white hover:text-gray-500 "
+                className="text-gray-800 dark:text-white hover:text-gray-700 "
               >
-                {link.name}
+                <div className="md:flex items-center justify-center ">
+                  <span className="hidden md:inline-flex pr-1">{link.logo}</span>
+                  <span className="hover:underline hover:underline-offset-4">{link.name}</span>
+                </div>
+                
               </a>
             </li>
           ))}

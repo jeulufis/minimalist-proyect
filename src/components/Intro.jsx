@@ -7,7 +7,10 @@ function Intro() {
         <div className="flex flex-col mb-10 mx-auto">
           <div className="flex justify-center items-center">
             <div className="flex flex-col w-full md:w-7/12">
-              <div className="text-sm bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">Hello, I'm an indie app developer based in Cauquenes!</div>
+              
+              <div className="text-sm bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">
+                Hello, I'm an indie app developer based in Cauquenes!
+              </div>
               <h1 className="text-3xl md:mb-3 font-semibold pt-4">
                 Juan Eulufí Salazar
               </h1>
