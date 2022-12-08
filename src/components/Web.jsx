@@ -10,7 +10,7 @@ import { Button } from "../ui/Button";
 
 export const Web = () => {
   return (
-    <div className="flex flex-col mb-10 mx-auto">
+    <div className="flex flex-col mb-10 mx-3">
       <div className="flex justify-center items-center">
         <div className="flex flex-col w-full md:w-7/12">
           <Title>On the web</Title>

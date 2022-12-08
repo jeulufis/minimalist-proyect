@@ -14,11 +14,11 @@ export default [
   },
   {
     year: "2021",
-    title: "First personal projects in github.",
+    title: "First personal projects in Github.",
   },
   {
     year: "2022",
-    title: "Qualified Computer Programmer/Analyst.",
+    title: "Qualified Computer Programmer & Analyst.",
   },
   {
     year: "2022",

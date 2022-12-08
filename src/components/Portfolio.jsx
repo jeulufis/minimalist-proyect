@@ -5,7 +5,7 @@ import Title from "./Title";
 
 function Portfolio() {
   return (
-    <>
+    <div className="mx-3">
       <div className="pl-0 md:pl-[13.5rem] ">
         <Title>Projects</Title>
       </div>
@@ -21,7 +21,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
