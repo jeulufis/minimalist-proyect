@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {AiFillGithub} from 'react-icons/ai'
 import logo from "/assets/logo1.svg";
+import { useMediaPredicate } from "react-media-hook";
 
 const Navbar = () => {
   let Links = [
@@ -14,13 +15,17 @@ const Navbar = () => {
 
   const [theme, setTheme] = useState(null);
 
+  const biggerThan400 = useMediaPredicate("(max-width: 568px)");
+
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
-    } else {
+    } else if(biggerThan400){
+      setTheme("dark");
+    }else {
       setTheme("light");
     }
-  }, []);
+  }, [theme]);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");

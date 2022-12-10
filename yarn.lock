@@ -1049,6 +1049,11 @@ react-icons@^4.6.0:
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.6.0.tgz"
   integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
 
+react-media-hook@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-media-hook/-/react-media-hook-0.5.0.tgz#f830231f31ea80049f8cbaf8058da90ab71e7150"
+  integrity sha512-OupDgOSCjUUWPiXq3HMoRwpsQry4cGf4vKzh2E984Xtm4I01ZFbq8JwCG/RPqXB9h0qxgzoYLbABC+LIZH8deQ==
+
 react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
