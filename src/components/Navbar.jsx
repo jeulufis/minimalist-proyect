@@ -15,17 +15,20 @@ const Navbar = () => {
 
   const [theme, setTheme] = useState(null);
 
-  const biggerThan400 = useMediaPredicate("(max-width: 568px)");
+  const biggerThan400 = useMediaPredicate("(max-width: 1024px)");
 
   useEffect(() => {
+    
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
-    } else if(biggerThan400){
-      setTheme("dark");
-    }else {
+    } else {
       setTheme("light");
     }
-  }, [theme]);
+    
+    if(!biggerThan400){
+      setTheme("dark");
+    }
+  }, []);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
