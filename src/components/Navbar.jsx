@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub } from "react-icons/ai";
 import logo from "/assets/logo1.svg";
 import { useMediaPredicate } from "react-media-hook";
 
@@ -9,7 +9,11 @@ const Navbar = () => {
     { name: "Projects", link: "/" },
     { name: "Bio", link: "/" },
     { name: "On the web", link: "/" },
-    { name: "Source", logo: <AiFillGithub />, link: "https://github.com/itodev-source/minimalist-proyect" },
+    {
+      name: "Source",
+      logo: <AiFillGithub />,
+      link: "https://github.com/itodev-source/minimalist-proyect",
+    },
   ];
   let [open, setOpen] = useState(false);
 
@@ -18,14 +22,12 @@ const Navbar = () => {
   const biggerThan400 = useMediaPredicate("(max-width: 1024px)");
 
   useEffect(() => {
-    
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
     } else {
       setTheme("light");
     }
-    
-    if(!biggerThan400){
+    if (!biggerThan400) {
       setTheme("dark");
     }
   }, []);
@@ -80,8 +82,13 @@ const Navbar = () => {
     <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95 dark:bg-[#202023]">
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
         <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
-          <img src={logo} className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500" />
-          <span className="text-sm font-semibold tracking-wider">Juan Eulufí</span>
+          <img
+            src={logo}
+            className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500"
+          />
+          <span className="text-sm font-semibold tracking-wider">
+            Juan Eulufí
+          </span>
         </div>
 
         <div
@@ -93,7 +100,9 @@ const Navbar = () => {
 
         <ul
           className={`md:flex md:items-center text-right pr-14 md:pb-0 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all ease-in  ${
-            open ? "top-15 shadow-sm bg-[#f4ede4] dark:bg-[#202023]" : "top-[-490px]"
+            open
+              ? "top-15 shadow-sm bg-[#f4ede4] dark:bg-[#202023]"
+              : "top-[-490px]"
           }`}
         >
           {Links.map((link) => (
@@ -103,24 +112,26 @@ const Navbar = () => {
                 className="text-gray-800 dark:text-white hover:text-gray-700 "
               >
                 <div className="md:flex items-center justify-center ">
-                  <span className="hidden md:inline-flex pr-1">{link.logo}</span>
-                  <span className="hover:underline hover:underline-offset-4">{link.name}</span>
+                  <span className="hidden md:inline-flex pr-1">
+                    {link.logo}
+                  </span>
+                  <span className="hover:underline hover:underline-offset-4">
+                    {link.name}
+                  </span>
                 </div>
-                
               </a>
             </li>
           ))}
-        
         </ul>
         <div>
-            <button
-              type="button"
-              onClick={handleThemeSwitch}
-              className="fixed z-30 right-20 top-[9px] bg-violet-500 dark:bg-orange-300 text-lg p-1 rounded-md "
-            >
-              {theme === "dark" ? sun : moon}
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={handleThemeSwitch}
+            className="fixed z-30 right-20 top-[9px] bg-violet-500 dark:bg-orange-300 text-lg p-1 rounded-md "
+          >
+            {theme === "dark" ? sun : moon}
+          </button>
+        </div>
       </div>
     </div>
   );
