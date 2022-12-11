@@ -1,25 +1,31 @@
 import React from "react";
+import {AiOutlineDoubleRight} from 'react-icons/ai'
 
 function Intro() {
   return (
     <>
-      <div className="pt-24">
+      <div className="pt-[4rem] md:pt-20">
         <div className="flex flex-col mb-10 mx-3">
           <div className="flex justify-center items-center">
             <div className="flex flex-col w-full md:w-7/12">
+              
               <div className="text-sm bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">
                 Hello, I'm an indie app developer based in Cauquenes!
               </div>
+              <img src="/assets/foto-me.jpg" className="h-32 w-32 object-cover rounded-full m-4 border-2 self-center" />
+
               <h1 className="md:text-3xl md:mb-3 font-semibold pt-4 text-2xl">
                 Juan Eulufí Salazar
               </h1>
 
               <p className="text-sm md:text-xl font-semibold">
                 Young Tech{" "}
+                
                 <span className="text-sm dark:text-[#c9a87d]">
                   ( Software Engenieer / Developer / Designer)
                 </span>
               </p>
+              
               <p className="text-sm max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 ">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
@@ -42,7 +48,11 @@ function Intro() {
                 always try to do my bit to be able to create functional
                 projects.
               </p>
+              <div className="self-center">
+                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm px-4  rounded-md flex items-center text-black">My blog<AiOutlineDoubleRight className="ml-1"/></button>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
