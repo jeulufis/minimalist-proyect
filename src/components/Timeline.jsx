@@ -23,7 +23,7 @@ function Timeline() {
             <span className="text-blue-500 dark:text-pink-500">
               {" "}Video Games
             </span>
-            , Lear New Language, 
+            , Lear New Programming Language, 
             <span className="text-blue-500 dark:text-pink-500">
                {' '}Meditate
             </span>.
