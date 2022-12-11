@@ -17,7 +17,6 @@ function Portfolio() {
                 <PortfolioItem $ {...project} />
               ))}
             </div>
-            
           </div>
         </div>
       </div>
