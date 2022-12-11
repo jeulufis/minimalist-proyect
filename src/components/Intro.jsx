@@ -41,7 +41,7 @@ function Intro() {
                 real-life problems with code. I am full of attitude to be able
                 to work as a team and to be able to share my knowledge in each
                 project, challenging obstacles, solving problems and learning
-                from each 
+                from each {" "}
                 <span className="text-blue-500 dark:text-pink-500">
                   "new experience"
                 </span>
@@ -54,7 +54,7 @@ function Intro() {
               </p>
               <div className="self-center">
                 <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm px-4  rounded-md flex items-center text-black">
-                  My blog
+                  My Blog
                   <AiOutlineDoubleRight className="ml-1" />
                 </button>
               </div>
