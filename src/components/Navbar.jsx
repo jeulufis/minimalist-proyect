@@ -16,14 +16,17 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState();
 
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("light");
-    } else {
       setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+    if (window.matchMedia("(max-width: 700px)").matches){
+      setTheme("dark")
     }
   }, []);
 
