@@ -2,6 +2,8 @@ import React from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
+
 
 function Intro() {
   AOS.init();
@@ -26,7 +28,7 @@ function Intro() {
               <p className="text-md md:text-xl font-semibold">
                 Young Tech{" "}
                 <span className="text-sm dark:text-[#c9a87d]">
-                  ( Software Engenieer / Developer / Designer)
+                  ( Software Engenieer / Developer / Designer )
                 </span>
               </p>
 
@@ -53,10 +55,12 @@ function Intro() {
                 is power".
               </p>
               <div className="self-center">
-                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm px-4  rounded-md flex items-center text-black">
+                <Link to='/blog'>
+                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm px-5  rounded-md flex items-center text-black">
                   My Blog
                   <AiOutlineDoubleRight className="ml-1" />
                 </button>
+                </Link>
               </div>
             </div>
           </div>
