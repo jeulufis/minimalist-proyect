@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
 
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState("dark");
 
 
   useEffect(() => {
