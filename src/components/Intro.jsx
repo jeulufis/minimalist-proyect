@@ -3,10 +3,14 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function Intro() {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  
   return (
     <>
       <div className="pt-[4rem] md:pt-20" data-aos="fade-up" data-aos-duration="2300">
@@ -32,7 +36,7 @@ function Intro() {
                 </span>
               </p>
 
-              <p className="text-sm max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 ">
+              <p className="text-sm max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
                 built from the ground up, from planning and designing all the
@@ -56,7 +60,7 @@ function Intro() {
               </p>
               <div className="self-center">
                 <Link to='/blog'>
-                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm px-5  rounded-md flex items-center text-black">
+                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
                   My Blog
                   <AiOutlineDoubleRight className="ml-1" />
                 </button>

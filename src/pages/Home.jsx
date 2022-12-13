@@ -13,10 +13,9 @@ export const Home = () => {
     <Fragment>
       <Navbar />
       <Intro />
-      <Portfolio />
       <Timeline />
       <Web />
-      <Contact />
+      <Portfolio />
       <Footer />
     </Fragment>
   );

@@ -18,7 +18,7 @@ function Timeline() {
         ))}
         <div className="pt-5">
           <Title>I <span className="dark:text-red-500  text-blue-500 text-2xl font-bold underline underline-offset-8 decoration-4">♥</span></Title>
-          <p className="text-sm indent-3 lg:indent-5">
+          <p className="text-sm indent-3 lg:indent-5 text-stone-800 dark:text-stone-300">
             Music, Read, Walk,
             <span className="text-blue-500 dark:text-pink-500">
               {" "}Video Games

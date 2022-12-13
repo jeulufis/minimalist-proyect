@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import logo from "/assets/logo1.svg";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "Projects", link: "/" },
-    { name: "Bio", link: "/" },
-    { name: "On the web", link: "/" },
+    { name: "Blog", link: "/blog" },
+    { name: "History", link: "/history" },
+    { name: "Contact", link: "/contact" },
     {
       name: "Source",
       logo: <AiFillGithub />,
-      link: "https://github.com/itodev-source/minimalist-proyect",
+      linkfeatured: "https://github.com/itodev-source/minimalist-proyect",
     },
   ];
   let [open, setOpen] = useState(false);
 
   const [theme, setTheme] = useState();
-
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -25,8 +25,8 @@ const Navbar = () => {
     } else {
       setTheme("light");
     }
-    if (window.matchMedia("(max-width: 700px)").matches){
-      setTheme("dark")
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      setTheme("dark");
     }
   }, []);
 
@@ -79,15 +79,16 @@ const Navbar = () => {
   return (
     <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95 dark:bg-[#202023]">
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
-        <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
-          <img
-            src={logo}
-            className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500"
-          />
-          <span className="text-sm font-semibold tracking-wider">
-            Juan Eulufí
-          </span>
-        </div>
+        <Link to='/'><div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
+            <img
+              src={logo}
+              className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500"
+            />
+            <span className="text-sm font-semibold tracking-wider">
+              Juan Eulufí
+            </span>
+        </div></Link>
+        
 
         <div
           onClick={() => setOpen(!open)}
@@ -105,11 +106,11 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-sm md:my-0 my-7">
-              <a
-                href={link.link}
+              {link.link ? <Link
+                to={link.link}
                 className="text-gray-800 dark:text-white hover:text-gray-700 "
               >
-                <div className="md:flex items-center justify-center ">
+                <div className="md:flex items-center justify-between ">
                   <span className="hidden md:inline-flex pr-1">
                     {link.logo}
                   </span>
@@ -117,7 +118,21 @@ const Navbar = () => {
                     {link.name}
                   </span>
                 </div>
-              </a>
+              </Link> : <a
+                href={link.linkfeatured}
+                target="_blank"
+                className="text-gray-800 dark:text-white hover:text-gray-700 "
+              >
+                <div className="md:flex items-center justify-between ">
+                  <span className="hidden md:inline-flex pr-1">
+                    {link.logo}
+                  </span>
+                  <span className="hover:underline hover:underline-offset-4">
+                    {link.name}
+                  </span>
+                </div>
+              </a>}
+              
             </li>
           ))}
         </ul>
