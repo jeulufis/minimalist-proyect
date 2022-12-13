@@ -2,4 +2,5 @@
 
 * {
    font-family: 'M PLUS Rounded 1c', sans-serif;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
