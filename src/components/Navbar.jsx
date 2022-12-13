@@ -15,6 +15,7 @@ const Navbar = () => {
       linkfeatured: "https://github.com/itodev-source/minimalist-proyect",
     },
   ];
+
   let [open, setOpen] = useState(false);
 
   const [theme, setTheme] = useState();
@@ -79,15 +80,15 @@ const Navbar = () => {
   return (
     <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95 dark:bg-[#202023]">
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
-        <Link to='/'><div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
+        <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
             <img
               src={logo}
               className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500"
             />
-            <span className="text-sm font-semibold tracking-wider">
+            <Link to='/' className="text-sm font-semibold tracking-wider">
               Juan Eulufí
-            </span>
-        </div></Link>
+            </Link>
+        </div>
         
 
         <div

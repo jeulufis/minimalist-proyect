@@ -11,7 +11,6 @@ import { Web } from "../components/Web";
 export const Home = () => {
   return (
     <Fragment>
-      <Navbar />
       <Intro />
       <Timeline />
       <Web />
