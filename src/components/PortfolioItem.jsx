@@ -1,5 +1,5 @@
 import React from "react";
-
+import { AiOutlineDoubleRight } from "react-icons/ai";
 
 
 function PortfolioItem({ title, imgUrl, stack, link, parrafo }) {
@@ -33,9 +33,18 @@ function PortfolioItem({ title, imgUrl, stack, link, parrafo }) {
               </span>
             ))}
           {parrafo && (
+            <>
             <span className="inline-block text-[12px] md:text-sm cursor-pointer text-stone-800 dark:text-stone-200">
               {parrafo}
             </span>
+            <a href={link}>
+            <button className="py-2 text-[12px] md:text-sm bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
+                  Click here !!
+                  <AiOutlineDoubleRight className="ml-1" />
+                </button>
+                </a>
+            </>
+            
           )}
         </p>
       </div>
