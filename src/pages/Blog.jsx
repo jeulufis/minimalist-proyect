@@ -20,8 +20,12 @@ export const Blog = () => {
           <Title>Blog</Title>
           <div className="flex flex-col mx-auto">
             <div className="flex justify-center items-center">
-              <div className="flex flex-col w-full">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4" data-aos="fade-up" data-aos-duration="2300">
+              <div className="flex flex-col w-full" data-aos="fade-up" data-aos-duration="2300">
+              <div className="text-sm bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">
+              This is my garden of knowledge.
+              </div>
+                <div className="pt-7 grid grid-cols-1 md:grid-cols-2 gap-4" >
+                
                   {blog.map((project) => (
                     <PortfolioItem $ {...project} />
                   ))}
