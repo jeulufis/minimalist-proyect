@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./styles/styles.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, Blog, History } from "./pages";
 import Contact from "./components/Contact";
@@ -17,6 +17,7 @@ function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="history" element={<History />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </div>
