@@ -3,7 +3,7 @@ export default [
     title: "Learn how to promote your work",
     imgUrl:
       "https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333__480.jpg",
-    link: "/",
+    link: "https://itodev.blogspot.com/2022/12/resumen-aprende-promocionar-tu-trabajo.html",
     parrafo:
       "Made for people looking to improve their job performance and for people who need an audience.",
   },
