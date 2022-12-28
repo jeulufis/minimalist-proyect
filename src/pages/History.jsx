@@ -6,17 +6,19 @@ export const History = () => {
   return (
     <div
       className="pt-[4rem] md:pt-20"
-      data-aos="fade-up"
-      data-aos-duration="2300"
+    
     >
       <div className="flex flex-col mb-10 mx-3">
         <div className="flex justify-center items-center">
-          <div className="flex flex-col w-full md:w-7/12">
+          <div className="flex flex-col w-full md:w-7/12" >
             <Title>History</Title>
             <div className="text-sm bg-[#f5efe8] text-center p-3 my-3 rounded-md dark:bg-[#313133]">
             Hello, my name is Juan Eulufí and I am a Software Developer.
               </div>
-          
+              <div   data-aos="fade-up"
+      data-aos-duration="2300">
+
+             
             <p className="text-sm max-w-xl text-justify pt-3 mb-1 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
               I was born in Cauquenes, Maule region, Chile in 2002, since I was
               a child I was always interested in the world of computers, I
@@ -50,8 +52,8 @@ export const History = () => {
             </p>
           </div>
         </div>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };

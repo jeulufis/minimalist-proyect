@@ -35,7 +35,9 @@ function Intro() {
 
               <p className="text-md md:text-xl font-semibold">
                 Young Tech{" "}
-                <span className="text-sm dark:text-[#c9a87d]">
+               
+              </p>
+               <p className="text-sm  dark:text-[#dcb98a] text-slate-600">
                   <Typewriter
                     words={["( Software Engenieer / Developer / Designer )"]  }
                     loop={1}
@@ -46,8 +48,7 @@ function Intro() {
                     delaySpeed={3000}
                   />
                   
-                </span>
-              </p>
+                </p>
 
               <p className="text-sm max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
