@@ -1,19 +1,23 @@
 import React from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
 
 function Intro() {
   useEffect(() => {
     AOS.init();
-  }, [])
-  
+  }, []);
+
   return (
     <>
-      <div className="pt-[4rem] md:pt-20" data-aos="fade-up" data-aos-duration="2300">
+      <div
+        className="pt-[4rem] md:pt-20"
+        data-aos="fade-up"
+        data-aos-duration="2300"
+      >
         <div className="flex flex-col mb-10 mx-3">
           <div className="flex justify-center items-center">
             <div className="flex flex-col w-full md:w-7/12">
@@ -32,7 +36,16 @@ function Intro() {
               <p className="text-md md:text-xl font-semibold">
                 Young Tech{" "}
                 <span className="text-sm dark:text-[#c9a87d]">
-                  ( Software Engenieer / Developer / Designer )
+                  <Typewriter
+                    words={["( Software Engenieer / Developer / Designer )"]  }
+                    loop={1}
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={70}
+                    deleteSpeed={10}
+                    delaySpeed={3000}
+                  />
+                  
                 </span>
               </p>
 
@@ -47,7 +60,7 @@ function Intro() {
                 real-life problems with code. I am full of attitude to be able
                 to work as a team and to be able to share my knowledge in each
                 project, challenging obstacles, solving problems and learning
-                from each {" "}
+                from each{" "}
                 <span className="text-blue-500 dark:text-pink-500">
                   "new experience"
                 </span>
@@ -59,11 +72,11 @@ function Intro() {
                 is power".
               </p>
               <div className="self-center">
-                <Link to='/blog'>
-                <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
-                  My Blog
-                  <AiOutlineDoubleRight className="ml-1" />
-                </button>
+                <Link to="/blog">
+                  <button className="py-2 bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
+                    My Blog
+                    <AiOutlineDoubleRight className="ml-1" />
+                  </button>
                 </Link>
               </div>
             </div>
