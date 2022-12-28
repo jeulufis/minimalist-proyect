@@ -15,7 +15,6 @@ export const Home = () => {
       <Timeline />
       <Web />
       <Portfolio />
-      <Footer />
     </Fragment>
   );
 };
