@@ -1,5 +1,13 @@
 export default [
   {
+    title: "The 7 habits of highly effective people",
+    imgUrl:
+      "https://img.freepik.com/foto-gratis/escala-perdida-peso-centimetro-estetoscopio-mancuerna-portapapeles-boligrafo-concepto-dieta_1150-42613.jpg?w=1480&t=st=1674428000~exp=1674428600~hmac=225a8c59d45800f69f5bcf68cd9916edd8b434bde02357552b7bf74f48516e7c",
+    link: "https://itodev.blogspot.com/2023/01/los-7-habitos-de-la-gente-altamente.html",
+    parrafo:
+      "Is a self-help book written by Stephen Covey and initially published in 1989, have sold more than 25 million copies",
+  },
+  {
     title: "Learn how to promote your work",
     imgUrl:
       "https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333__480.jpg",
