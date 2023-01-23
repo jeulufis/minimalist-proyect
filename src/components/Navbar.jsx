@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import logo from "/assets/logo1.svg";
+import logo from "/assets/logo-page.png";
 
 const Navbar = () => {
   let Links = [
@@ -81,15 +81,14 @@ const Navbar = () => {
     <div className="shadow-sm w-full fixed top-0 left-0 z-10 bg-[#f4ede4] opacity-95 dark:bg-[#202023]">
       <div className="md:flex items-center justify-center py-3 md:px-10 px-7">
         <div className="cursor-pointer text-gray-800 dark:text-white flex items-center ">
-            <img
-              src={logo}
-              className="w-6 h-6 hover:rotate-12 mr-1 transition-all dark:bg-pink-500"
-            />
-            <Link to='/' className="text-sm font-semibold tracking-wider">
-              Juan Eulufí
-            </Link>
+          <img
+            src={logo}
+            className="w-6 h-6 hover:rotate-12 mr-1 transition-all"
+          />
+          <Link to="/" className="text-sm font-semibold tracking-wider">
+            Juan Eulufí
+          </Link>
         </div>
-        
 
         <div
           onClick={() => setOpen(!open)}
@@ -107,33 +106,36 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-sm md:my-0 my-7">
-              {link.link ? <Link
-                to={link.link}
-                className="text-gray-800 dark:text-white hover:text-gray-700 "
-              >
-                <div className="md:flex items-center justify-between ">
-                  <span className="hidden md:inline-flex pr-1">
-                    {link.logo}
-                  </span>
-                  <span className="hover:underline hover:underline-offset-4">
-                    {link.name}
-                  </span>
-                </div>
-              </Link> : <a
-                href={link.linkfeatured}
-                target="_blank"
-                className="text-gray-800 dark:text-white hover:text-gray-700 "
-              >
-                <div className="md:flex items-center justify-between ">
-                  <span className="hidden md:inline-flex pr-1">
-                    {link.logo}
-                  </span>
-                  <span className="hover:underline hover:underline-offset-4">
-                    {link.name}
-                  </span>
-                </div>
-              </a>}
-              
+              {link.link ? (
+                <Link
+                  to={link.link}
+                  className="text-gray-800 dark:text-white hover:text-gray-700 "
+                >
+                  <div className="md:flex items-center justify-between ">
+                    <span className="hidden md:inline-flex pr-1">
+                      {link.logo}
+                    </span>
+                    <span className="hover:underline hover:underline-offset-4">
+                      {link.name}
+                    </span>
+                  </div>
+                </Link>
+              ) : (
+                <a
+                  href={link.linkfeatured}
+                  target="_blank"
+                  className="text-gray-800 dark:text-white hover:text-gray-700 "
+                >
+                  <div className="md:flex items-center justify-between ">
+                    <span className="hidden md:inline-flex pr-1">
+                      {link.logo}
+                    </span>
+                    <span className="hover:underline hover:underline-offset-4">
+                      {link.name}
+                    </span>
+                  </div>
+                </a>
+              )}
             </li>
           ))}
         </ul>
