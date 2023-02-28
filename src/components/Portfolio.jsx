@@ -1,5 +1,6 @@
 import React from "react";
 import portfolio from "../data/portfolio";
+import { ButtonContact } from "../ui/ButtonContact";
 import PortfolioItem from "./PortfolioItem";
 import Title from "./Title";
 
@@ -20,6 +21,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
+      <ButtonContact />
     </div>
   );
 }

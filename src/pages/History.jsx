@@ -1,8 +1,12 @@
 import React from "react";
-import Footer from "../components/Footer";
 import Title from "../components/Title";
+import { useScrollTo } from "../hooks/useScrollTo";
+import { Typewriter } from "react-simple-typewriter";
+
 
 export const History = () => {
+  useScrollTo();
+
   return (
     <div
       className="pt-[4rem] md:pt-20"
@@ -13,7 +17,16 @@ export const History = () => {
           <div className="flex flex-col w-full md:w-7/12" >
             <Title>History</Title>
             <div className="text-sm bg-[#f5efe8] text-center p-3 my-3 rounded-md dark:bg-[#313133]">
-            Hello, my name is Juan Eulufí and I am a Software Developer.
+           
+            <Typewriter
+                    words={["Hello, my name is Juan Eulufí and I am a Software Developer."]  }
+                    loop={1}
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={70}
+                    deleteSpeed={10}
+                    delaySpeed={3000}
+                  />
               </div>
               <div   data-aos="fade-up"
       data-aos-duration="2300">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Title from "../components/Title";
-import { Button } from "../ui/Button";
+import { useScrollTo } from "../hooks/useScrollTo";
 
 export const Error = () => {
+  useScrollTo();
   return (
     <div className="pt-40 container">
       <div className="flex flex-col md:flex-row justify-center mx-3">

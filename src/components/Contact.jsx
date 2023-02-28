@@ -1,7 +1,11 @@
 import React from "react";
+import { useScrollTo } from "../hooks/useScrollTo";
 import Title from "./Title";
 
 function Contact() {
+  useScrollTo();
+
+
   return (
     <div className="flex flex-col mb-10 mx-3 pt-20">
       <div className="flex justify-center items-center">

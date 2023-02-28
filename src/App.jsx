@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./styles/styles.css";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, Blog, History } from "./pages";
 import Contact from "./components/Contact";
@@ -8,7 +8,9 @@ import Footer from "./components/Footer";
 import { Error } from "./pages/Error";
 
 
+
 function App() {
+  
   return (
     <Fragment>
       <div className="bg-[#f0e7db] dark:bg-[#202023]  text-stone-900 dark:text-stone-300 min-h-screen font-plus">
