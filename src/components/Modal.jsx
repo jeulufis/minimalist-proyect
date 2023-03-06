@@ -34,7 +34,7 @@ export const Modal = ({ closeModal, showModal, modalText, year }) => {
                                 Date {year}
                             </h3>
                             <button
-                                className="p-1 ml-auto bg-transparent border-0 text-black opacity-50 hover:opacity-80 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                className="p-1 ml-auto bg-transparent border-0 text-black opacity-50 hover:opacity-90 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                 onClick={() => handleCloseModal()}
                             >
                                 <AiOutlineClose />
@@ -60,7 +60,7 @@ export const Modal = ({ closeModal, showModal, modalText, year }) => {
                     </div>
                 </div>
             </div>
-            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+            <div className="opacity-40 fixed inset-0 z-40 bg-black"></div>
         </>
     )
 }
