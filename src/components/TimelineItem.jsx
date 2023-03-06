@@ -17,7 +17,7 @@ function TimelineItem({ year, title, modalText }) {
               <button onClick={handelClick} className="px-2 py-1 hover:px-2.5 hover:py-2 transition-all	 duration-200 	animate-pulse ease-linear text-white absolute dark:text-black cursor-pointer  bg-stone-900 hover:bg-stone-800 dark:hover:bg-stone-200 dark:bg-white rounded-sm">
                 {year}
               </button>
-              {showModal && <Modal closeModal={setShowModal} modalText={modalText} year={year}/>}
+              {showModal &&  <Modal closeModal={setShowModal} showModal={showModal} modalText={modalText} year={year}/>}
               <p className="pl-14 ml-2 text-stone-800 dark:text-stone-200">{title}</p>
             </div>
         </li>
