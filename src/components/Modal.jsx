@@ -18,6 +18,15 @@ export const Modal = ({ closeModal, showModal, modalText, year }) => {
         });
     }, [])
 
+    // No poder mover el modal ni arriba ni abajo
+    useEffect(() => {
+        document.body.classList.add("overflow-hidden")
+
+        return () => {
+            document.body.classList.remove("overflow-hidden")
+        }
+    }, [])
+
 
     return (
         <>
@@ -60,7 +69,7 @@ export const Modal = ({ closeModal, showModal, modalText, year }) => {
                     </div>
                 </div>
             </div>
-            <div className="opacity-40 fixed inset-0 z-40 bg-black"></div>
+            <div className="opacity-40 fixed inset-0 z-40 bg-black" ></div>
         </>
     )
 }
