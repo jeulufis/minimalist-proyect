@@ -26,6 +26,7 @@ function Intro() {
               </div>
               <img
                 src="/assets/foto-me.jpg"
+                alt="Fotografia a Juan Eulufi Salazar"
                 className="h-32 w-32 object-cover rounded-full m-5 border-2 self-center "
               />
 

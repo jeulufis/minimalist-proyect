@@ -84,6 +84,7 @@ const Navbar = () => {
           <img
             src={logo}
             className="w-6 h-6 hover:rotate-12 mr-1 transition-all"
+            alt="Logo de Nitodev"
           />
           <Link to="/" className="text-sm font-semibold tracking-wider">
             Juan Eulufí
