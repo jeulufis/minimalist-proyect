@@ -2,12 +2,38 @@ import React from "react";
 import Title from "../components/Title";
 import { useScrollTo } from "../hooks/useScrollTo";
 import { Typewriter } from "react-simple-typewriter";
+import { Helmet } from "react-helmet-async";
 
 
 export const History = () => {
   useScrollTo();
 
   return (
+    <>
+    <Helmet>
+        <title>Juan Eulufi Salazar | History</title>
+        <meta name="description" content="Historia de como Juan Eulufi se adentro al mundo de la programacion." />
+        <meta name="keywords" content='Historia de Juan Eulufi con el mundo de la programacion y un poco de su vida.' />
+        <meta name="robots" content='all' />
+        <link rel="canonical" href="https://nitodev.netlify.app/history" />
+        <meta name="author" content='Juan Eulufi' />
+        <meta name="publisher" content='Juan Eulufi' />
+
+        {/* Social Media Tags */}
+        <meta property="og:title" content='Juan Eulufi Salazar | History' />
+        <meta property="og:description" content='Historia de Juan Eulufi con el mundo de la programacion y un poco de su vida.' />
+        <meta property="og:url" content="https://nitodev.netlify.app/history" />
+        <meta property="og:image" content='https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg' />
+
+        <meta name="twitter:title" content='Juan Eulufi Salazar | History' />
+        <meta
+          name="twitter:description"
+          content='Historia de Juan Eulufi con el mundo de la programacion y un poco de su vida.'
+        />
+        <meta name="twitter:image" content='https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg' />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+ 
     <div
       className="pt-[4rem] md:pt-20"
     
@@ -68,5 +94,6 @@ export const History = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
