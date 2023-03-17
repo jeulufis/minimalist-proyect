@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
 
-function PortfolioItem({ title, imgUrl, stack, link, parrafo }) {
+function PortfolioItem({ title, imgUrl, stack, link, parrafo, parrafoPortfolio }) {
 
   return (
     <div>
@@ -22,15 +22,20 @@ function PortfolioItem({ title, imgUrl, stack, link, parrafo }) {
       </div>
 
       <div className="w-full p-4 text-center">
-        <h3 className="text-md md:text-xl mb-2 mb:mb-3 text-stone-800 dark:text-stone-200">
+        <h3 className="text-md md:text-xl mb-2 mb:mb-3 font-semibold tracking-wide	 text-stone-800 dark:text-stone-200">
           {title}
         </h3>
+        {parrafoPortfolio && <div className="text-xs mb-4 bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">{parrafoPortfolio}</div>}
         <p className="flex flex-wrap gap-2 flex-row items-center justify-center text-xs ">
           {stack &&
             stack.map((item) => (
-              <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md cursor-pointer text-stone-800 dark:text-stone-200">
-                {item}
-              </span>
+              <>
+                
+                <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md cursor-pointer hover:bg-black hover:text-white text-stone-800 dark:text-stone-200">
+                  {item}
+                </span>
+              </>
+              
             ))}
           {parrafo && (
             <>
