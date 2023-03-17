@@ -16,13 +16,13 @@ export default [
       title: 'Cryptocurrency Quote',
       imgUrl: '/assets/criptomonedas.jpg',
       parrafoPortfolio: "The cryptocurrency market connected to an API is listed.",
-      stack: ['React', "Tailwind Tailwind"],
+      stack: ['React', "Tailwind CSS"],
       link: 'https://github.com/itodev-source/criptomonedas-vite',
    },{
       title: 'Moder Website',
       imgUrl: '/assets/modernwebsite.jpg',
       parrafoPortfolio: "Website where different functionalities are implemented.",
-      stack: ['React', 'Tailwind Tailwind', 'Vite'],
+      stack: ['React', 'Tailwind CSS', 'Vite'],
       link: 'https://github.com/itodev-source/modern_website',
    },
 ]
