@@ -21,11 +21,11 @@ function PortfolioItem({ title, imgUrl, stack, link, parrafo, parrafoPortfolio }
         </a>
       </div>
 
-      <div className="w-full p-4 text-center">
-        <h3 className="text-md md:text-xl mb-2 mb:mb-3 font-semibold tracking-wide	 text-stone-800 dark:text-stone-200">
+      <div className="w-full text-center">
+        <h3 className="text-md md:text-xl mb-2 mb:mb-3 font-semibold tracking-wide pt-3 text-stone-800 dark:text-stone-200">
           {title}
         </h3>
-        {parrafoPortfolio && <div className="text-xs mb-4 bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">{parrafoPortfolio}</div>}
+        {parrafoPortfolio && <div className="text-xs mb-4 bg-[#f5efe8] text-center py-3 px-3 rounded-md dark:bg-[#313133]">{parrafoPortfolio}</div>}
         <p className="flex flex-wrap gap-2 flex-row items-center justify-center text-xs ">
           {stack &&
             stack.map((item) => (
