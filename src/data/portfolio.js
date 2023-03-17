@@ -2,23 +2,27 @@ export default [
    {
       title: 'Developer Portfolio',
       imgUrl: '/assets/minimalistdark.png',
-      stack: ['React','Tailwind', 'Framer Motion', "React router dom"],
+      parrafoPortfolio: "Open source project for programmers to occupy the template.",
+      stack: ['React','Tailwind CSS', "React router dom"],
       link: 'https://github.com/itodev-source/minimalist-proyect',
    },
      {
       title: 'Tesla Clone',
       imgUrl: '/assets/tesla_clone.jpg',
-      stack: ['React','Styled Components', 'React Reveal','Material Icons'],
+      parrafoPortfolio: "Open source project, to show my programming skills.",
+      stack: ['React','Styled Components','Material Icons'],
       link: 'https://github.com/itodev-source/clone-tesla',
    }, {
       title: 'Cryptocurrency Quote',
       imgUrl: '/assets/criptomonedas.jpg',
-      stack: ['React', 'HTML', 'CSS'],
+      parrafoPortfolio: "The cryptocurrency market connected to an API is listed.",
+      stack: ['React', "Tailwind Tailwind"],
       link: 'https://github.com/itodev-source/criptomonedas-vite',
    },{
       title: 'Moder Website',
       imgUrl: '/assets/modernwebsite.jpg',
-      stack: ['React', 'Tailwind', 'Vite'],
+      parrafoPortfolio: "Website where different functionalities are implemented.",
+      stack: ['React', 'Tailwind Tailwind', 'Vite'],
       link: 'https://github.com/itodev-source/modern_website',
    },
 ]
