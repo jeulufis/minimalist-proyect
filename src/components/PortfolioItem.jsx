@@ -6,7 +6,7 @@ function PortfolioItem({ title, imgUrl, stack, link, parrafo, parrafoPortfolio }
 
   return (
     <div>
-      <div className="rounded-sm overflow-hidden ">
+      <div className="rounded-sm overflow-hidden transition ease-in-out delay-400 hover:scale-[1.1]">
         <a
           href={link}
           target="_blank"
@@ -43,9 +43,9 @@ function PortfolioItem({ title, imgUrl, stack, link, parrafo, parrafoPortfolio }
               {parrafo}
             </span>
             <a href={link}>
-            <button className="py-2 text-[12px] md:text-sm bg-emerald-300 hover:bg-emerald-200 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
-                  Click here !!
-                  <AiOutlineDoubleRight className="ml-1" />
+            <button className="py-2 text-[12px] md:text-sm transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
+                  Click here
+                  <AiOutlineDoubleRight className="ml-1 " />
                 </button>
                 </a>
             </>
