@@ -30,15 +30,15 @@ function Intro() {
                 className="h-32 w-32 object-cover rounded-full m-5 border-2 self-center "
               />
 
-              <h1 className="md:text-3xl md:mb-3 font-semibold text-2xl">
+              <h1 className="md:text-3xl md:mb-3 tracking-wide font-semibold text-2xl">
                 Juan Eulufí Salazar
               </h1>
 
-              <p className="text-md md:text-xl font-semibold">
+              <p className="text-md md:text-xl tracking-wide font-semibold">
                 Young Tech{" "}
                
               </p>
-               <p className="text-sm  dark:text-[#dcb98a] text-pink-500">
+               <p className="text-sm  tracking-wider dark:text-[#dcb98a] text-pink-500">
                   <Typewriter
                     words={["( Software Engenieer / Developer / Designer )"]  }
                     loop={1}
