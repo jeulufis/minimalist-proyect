@@ -38,7 +38,7 @@ function Intro() {
                 Young Tech{" "}
                
               </p>
-               <p className="text-sm  tracking-wider dark:text-[#dcb98a] text-pink-500">
+               <p className="text-sm tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
                   <Typewriter
                     words={["( Software Engenieer / Developer / Designer )"]  }
                     loop={1}
