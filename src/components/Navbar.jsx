@@ -144,7 +144,9 @@ const Navbar = () => {
           <button
             type="button"
             onClick={handleThemeSwitch}
-            className="fixed z-30 right-20 top-[9px] bg-violet-500 dark:bg-orange-300 text-lg p-1 rounded-md "
+            className="fixed z-30 right-20 top-[9px] bg-violet-500 dark:bg-orange-300 text-lg p-1 rounded-md"
+            id="botonDarkMode"
+            aria-label="Boton darkmode"
           >
             {theme === "dark" ? sun : moon}
           </button>

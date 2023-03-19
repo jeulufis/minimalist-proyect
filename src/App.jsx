@@ -6,33 +6,44 @@ import { Home, Blog, History } from "./pages";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Error } from "./pages/Error";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
-
   return (
     <HelmetProvider>
       <Helmet>
         <title>Juan Eulufi Salazar | Home</title>
         <meta name="description" content="Portafolio personal de Juan Eulufi" />
-        <meta name="keywords" content='Desarrollador de Frontend, creador de sitios web.' />
-        <meta name="robots" content='all' />
+        <meta
+          name="keywords"
+          content="Desarrollador de Frontend, creador de sitios web."
+        />
+        <meta name="robots" content="all" />
         <link rel="canonical" href="https://nitodev.netlify.app/" />
-        <meta name="author" content='Juan Eulufi' />
-        <meta name="publisher" content='Juan Eulufi' />
+        <meta name="author" content="Juan Eulufi" />
+        <meta name="publisher" content="Juan Eulufi" />
 
         {/* Social Media Tags */}
-        <meta property="og:title" content='Juan Eulufi Salazar | Home' />
-        <meta property="og:description" content='Desarrollador de Frontend, creador de sitios web.' />
-        <meta property="og:url" content="https://nitodev.netlify.app/" />
-        <meta property="og:image" content='https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg' />
-
-        <meta name="twitter:title" content='Juan Eulufi Salazar | Home' />
+        <meta property="og:title" content="Juan Eulufi Salazar | Home" />
         <meta
-            name="twitter:description"
-            content='Desarrollador de Frontend, creador de sitios web.'
+          property="og:description"
+          content="Desarrollador de Frontend, creador de sitios web."
         />
-        <meta name="twitter:image" content='https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg' />
+        <meta property="og:url" content="https://nitodev.netlify.app/" />
+        <meta
+          property="og:image"
+          content="https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg"
+        />
+
+        <meta name="twitter:title" content="Juan Eulufi Salazar | Home" />
+        <meta
+          name="twitter:description"
+          content="Desarrollador de Frontend, creador de sitios web."
+        />
+        <meta
+          name="twitter:image"
+          content="https://bafybeiflsbfx4bikx6xp3y4bosckczjk4wtqawqgl6sg2t46chv7m2r33m.ipfs.w3s.link/foto-me.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Fragment>
