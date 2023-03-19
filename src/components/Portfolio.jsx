@@ -15,7 +15,7 @@ function Portfolio() {
           <div className="flex flex-col w-full md:w-7/12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {portfolio.map((project) => (
-                <PortfolioItem $ {...project} />
+                <PortfolioItem key={project.title}  {...project} />
               ))}
             </div>
           </div>
