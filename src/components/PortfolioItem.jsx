@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function PortfolioItem({ title, imgUrl, stack, link, parrafo, parrafoPortfolio }) {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
   return (
     <div>
-      <div className="rounded-sm overflow-hidden transition ease-in-out delay-400 hover:scale-[1.1]">
+      <div className="rounded-sm overflow-hidden transition ease-in-out delay-400 hover:scale-[1.1]" data-aos="fade-up">
         <a
           href={link}
           target="_blank"

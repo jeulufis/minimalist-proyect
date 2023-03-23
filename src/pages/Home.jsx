@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Intro from "../components/Intro";
+import { Love } from "../components/Love";
 import Portfolio from "../components/Portfolio";
 import Timeline from "../components/Timeline";
 import { Web } from "../components/Web";
@@ -13,6 +14,7 @@ export const Home = () => {
       <Intro />
       <Timeline />
       <Web />
+      <Love />
       <Portfolio />
     </Fragment>
   );

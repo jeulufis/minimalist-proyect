@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import portfolio from "../data/portfolio";
 import { ButtonContact } from "../ui/ButtonContact";
 import PortfolioItem from "./PortfolioItem";
 import Title from "./Title";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Portfolio() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
   return (
-    <div className="mx-3">
+    <div className="mx-3" data-aos="fade-up">
       <div className="pl-0 md:pl-[13.5rem] ">
         <Title>Projects</Title>
       </div>
@@ -15,7 +23,7 @@ function Portfolio() {
           <div className="flex flex-col w-full md:w-7/12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {portfolio.map((project) => (
-                <PortfolioItem key={project.title}  {...project} />
+                <PortfolioItem {...project} key={project.title}/>
               ))}
             </div>
           </div>

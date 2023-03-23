@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import timeline from "../data/timeline";
 import TimelineItem from "./TimelineItem";
 import Title from "./Title";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Timeline() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: false,
+    });
+  }, [])
   return (
-    <div className="flex flex-col md:flex-row justify-center my-8 mx-3 ">
+
+    <div className="flex flex-col md:flex-row justify-center my-8 mx-3 " data-aos="fade-up">
       <div className="w-full md:w-7/12">
         <Title>Bio</Title>
         {timeline.map((item) => (
@@ -18,19 +29,6 @@ function Timeline() {
             modalText={item.modalText}
           />
         ))}
-        <div className="pt-5">
-          <Title>I <span className="dark:text-red-500  text-blue-500 text-2xl font-bold underline underline-offset-8 decoration-4">♥</span></Title>
-          <p className="text-sm indent-3 lg:indent-5 text-stone-800 dark:text-stone-300">
-            Music, Read, Walk,
-            <span className="text-blue-500 dark:text-pink-500 cursor-pointer">
-              {" "}Video Games
-            </span>
-            , Lear New Programming Language, 
-            <span className="text-blue-500 dark:text-pink-500 cursor-pointer">
-               {' '}Meditate
-            </span>.
-          </p>
-        </div>
       </div>
     </div>
   );

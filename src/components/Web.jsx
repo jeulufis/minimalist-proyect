@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Title from "./Title";
 import {
   AiFillGithub,
@@ -7,10 +7,19 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { Button } from "../ui/Button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Web = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: false,
+    });
+  }, [])
   return (
-    <div className="flex flex-col mb-10 mx-3">
+    <div className="flex flex-col mb-10 mx-3" data-aos="fade-up">
       <div className="flex justify-center items-center">
         <div className="flex flex-col w-full md:w-7/12">
           <Title>On the web</Title>
