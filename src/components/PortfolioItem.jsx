@@ -45,7 +45,7 @@ function PortfolioItem({
             {parrafoPortfolio}
           </div>
         )}
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-center  text-sm md:text-base ">
+        <p className="flex flex-wrap gap-2 flex-row items-center justify-center  md:text-base ">
           {stack &&
             stack.map((item) => (
               <>
@@ -56,11 +56,11 @@ function PortfolioItem({
             ))}
           {parrafo && (
             <>
-              <span className="inline-block text-[12px] cursor-pointer text-stone-800 dark:text-stone-200">
+              <span className="inline-block cursor-pointer text-stone-800 dark:text-stone-200">
                 {parrafo}
               </span>
               <a href={link}>
-                <button className="py-2 text-[12px] transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black md:px-7 px-6 rounded-md flex items-center text-black">
+                <button className="py-2 transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black md:px-7 px-6 rounded-md flex items-center text-black">
                   Click here
                   <AiOutlineDoubleRight className="ml-1 " />
                 </button>
