@@ -37,7 +37,7 @@ function Intro() {
               <p className="md:text-xl tracking-wide font-semibold">
                 Young Tech{" "}
               </p>
-              <p className=" tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
+              <p className=" text-sm md:text-base tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
                 <Typewriter
                   words={["( Software Engenieer / Developer / Designer )"]}
                   loop={1}
@@ -73,7 +73,7 @@ function Intro() {
               </p>
               <div className="self-center">
                 <Link to="/blog">
-                  <button className="py-2 text-sm md:text-base transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black md:px-7 px-6 rounded-md flex items-center text-black">
+                  <button className="py-3 text-sm md:text-base transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black px-10 rounded-md flex items-center text-black">
                     My Blog
                     <AiOutlineDoubleRight className="ml-1" />
                   </button>
