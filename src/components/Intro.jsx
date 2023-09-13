@@ -21,7 +21,7 @@ function Intro() {
         <div className="flex flex-col mb-10 mx-3">
           <div className="flex justify-center items-center">
             <div className="flex flex-col w-full md:w-7/12">
-              <div className="text-sm bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">
+              <div className="bg-[#f5efe8] text-center p-3 rounded-md dark:bg-[#313133]">
                 Hello, I'm an indie app developer based in Cauquenes!
               </div>
               <img
@@ -31,27 +31,25 @@ function Intro() {
               />
 
               <h1 className="md:text-3xl md:mb-3 tracking-wide font-semibold text-2xl">
-                Juan Eulufí Salazar
+                Juan Eulufí Salazar ✋🌟
               </h1>
 
               <p className="text-md md:text-xl tracking-wide font-semibold">
                 Young Tech{" "}
-               
               </p>
-               <p className="text-sm tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
-                  <Typewriter
-                    words={["( Software Engenieer / Developer / Designer )"]  }
-                    loop={1}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={70}
-                    deleteSpeed={10}
-                    delaySpeed={3000}
-                  />
-                  
-                </p>
+              <p className=" tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
+                <Typewriter
+                  words={["( Software Engenieer / Developer / Designer )"]}
+                  loop={1}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={10}
+                  delaySpeed={3000}
+                />
+              </p>
 
-              <p className="text-sm max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
+              <p className=" max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
                 built from the ground up, from planning and designing all the
@@ -75,7 +73,7 @@ function Intro() {
               </p>
               <div className="self-center">
                 <Link to="/blog">
-                  <button className="py-2 text-[12px] md:text-sm transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black text-sm md:px-7 px-6 rounded-md flex items-center text-black">
+                  <button className="py-2 text-[12px] transition ease-in-out delay-100 hover:-translate-y-0.5 hover:scale-110 duration-300 bg-emerald-400 hover:bg-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:hover:text-black md:px-7 px-6 rounded-md flex items-center text-black">
                     My Blog
                     <AiOutlineDoubleRight className="ml-1" />
                   </button>

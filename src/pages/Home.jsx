@@ -5,13 +5,15 @@ import Portfolio from "../components/Portfolio";
 import Timeline from "../components/Timeline";
 import { Web } from "../components/Web";
 import { useScrollTo } from "../hooks/useScrollTo";
+import TechStack from "../components/TechStack";
 
 export const Home = () => {
   useScrollTo();
-  
+
   return (
     <Fragment>
       <Intro />
+      <TechStack />
       <Timeline />
       <Web />
       <Love />
