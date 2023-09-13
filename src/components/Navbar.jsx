@@ -86,7 +86,7 @@ const Navbar = () => {
             className="w-6 h-6 hover:rotate-12 mr-1 transition-all"
             alt="Logo de Nitodev"
           />
-          <Link to="/" className="text-sm font-semibold tracking-wider">
+          <Link to="/" className="font-semibold tracking-wider">
             Juan Eulufí
           </Link>
         </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-sm md:my-0 my-7">
+            <li key={link.name} className="md:ml-8 md:my-0 my-7">
               {link.link ? (
                 <Link
                   to={link.link}
