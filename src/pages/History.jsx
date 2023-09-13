@@ -51,7 +51,7 @@ export const History = () => {
       <div className="pt-[4rem] md:pt-20">
         <div className="flex flex-col mb-10 mx-3">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col w-full md:w-7/12">
+            <div className="flex flex-col w-full md:w-8/12">
               <Title>History</Title>
               <div className=" bg-[#f5efe8] text-center p-3 my-3 rounded-md dark:bg-[#313133]">
                 <Typewriter

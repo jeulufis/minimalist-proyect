@@ -20,7 +20,7 @@ function Intro() {
       >
         <div className="flex flex-col mb-10 mx-3">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col w-full md:w-7/12">
+            <div className="flex flex-col w-full md:w-8/12">
               <div className="bg-[#f5efe8] text-center p-3 text-sm md:text-base rounded-md dark:bg-[#313133]">
                 Hello, I'm an indie app developer based in Cauquenes!
               </div>
@@ -54,7 +54,7 @@ function Intro() {
                 />
               </p>
 
-              <p className="text-sm md:text-base max-w-xl mb-6 text-justify pt-3 indent-3 leading-6 lg:indent-5 text-stone-800 dark:text-stone-200">
+              <p className="text-sm md:text-base  mb-6 text-justify pt-3 indent-3 leading-6 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
                 built from the ground up, from planning and designing all the

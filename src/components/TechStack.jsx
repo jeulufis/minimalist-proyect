@@ -35,7 +35,7 @@ export default function TechStack() {
     >
       <div className="flex flex-col">
         <div className="flex justify-center items-center">
-          <div className="flex flex-col w-full md:w-7/12">
+          <div className="flex flex-col w-full md:w-8/12">
             <div>
               <Title>TechStack</Title>
               <ul className="grid grid-cols-2 md:grid-cols-4 gap-3">

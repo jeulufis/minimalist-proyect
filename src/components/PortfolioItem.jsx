@@ -31,7 +31,7 @@ function PortfolioItem({
           <img
             src={imgUrl}
             alt="portfolio"
-            className="w-full lg:h-36 object-cover "
+            className="w-full lg:h-36 object-cover border p-1 md:p-2 h-auto max-w-lg transition-all duration-300 rounded-sm cursor-pointer filter grayscale-[50%] hover:grayscale-0"
           />
         </a>
       </div>

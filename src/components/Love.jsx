@@ -7,7 +7,7 @@ export const Love = () => {
       className="flex flex-col md:flex-row justify-center my-8 mx-3 "
       data-aos="fade-up"
     >
-      <div className="w-full md:w-7/12">
+      <div className="w-full md:w-8/12">
         <div className="pt-5">
           <Title>
             I{" "}

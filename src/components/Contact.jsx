@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useScrollTo } from "../hooks/useScrollTo";
 import Title from "./Title";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
   useScrollTo();
@@ -13,14 +13,14 @@ function Contact() {
       once: false,
       mirror: false,
     });
-  }, [])
+  }, []);
   return (
     <div className="flex flex-col mb-10 mx-3 pt-20" data-aos="fade-up">
       <div className="flex justify-center items-center">
         <form
           action="https://getform.io/f/f66bf08a-f063-4db9-8f9b-3341149349e7"
           method="POST"
-          className="flex flex-col w-full md:w-7/12"
+          className="flex flex-col w-full md:w-8/12"
         >
           <Title>Contact</Title>
           <input

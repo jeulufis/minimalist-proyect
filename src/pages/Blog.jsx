@@ -53,7 +53,7 @@ export const Blog = () => {
       </Helmet>
       <div className="pt-20">
         <div className="flex flex-col md:flex-row justify-center mx-3 ">
-          <div className="w-full md:w-7/12">
+          <div className="w-full md:w-8/12">
             <Title>Blog</Title>
             <div className="flex flex-col mx-auto">
               <div className="flex justify-center items-center">

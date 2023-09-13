@@ -7,7 +7,7 @@ export const Error = () => {
   return (
     <div className="pt-40 container">
       <div className="flex flex-col md:flex-row justify-center mx-3">
-        <div className="w-full md:w-7/12 text-center">
+        <div className="w-full md:w-8/12 text-center">
           <h4 className="md:text-2xl font-bold text-xl">Not Found</h4>
           <p className="md:text-md ">
             The page you're looking for was not found.
