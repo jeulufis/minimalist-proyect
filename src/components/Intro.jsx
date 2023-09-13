@@ -49,7 +49,7 @@ function Intro() {
                 />
               </p>
 
-              <p className="text-sm md:text-base max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
+              <p className="text-sm md:text-base max-w-xl mb-6 text-justify pt-3 indent-3 leading-6 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
                 built from the ground up, from planning and designing all the
