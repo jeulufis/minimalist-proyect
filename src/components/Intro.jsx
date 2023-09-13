@@ -34,7 +34,7 @@ function Intro() {
                 Juan Eulufí Salazar ✋🌟
               </h1>
 
-              <p className="text-md md:text-xl tracking-wide font-semibold">
+              <p className="md:text-xl tracking-wide font-semibold">
                 Young Tech{" "}
               </p>
               <p className=" tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
@@ -49,7 +49,7 @@ function Intro() {
                 />
               </p>
 
-              <p className=" max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
+              <p className="text-sm md:text-base max-w-xl mb-6 text-justify pt-3 indent-3 lg:indent-5 text-stone-800 dark:text-stone-200">
                 I'm an indie front-end developer creator building my version of
                 the digital world one step at a time. All coding projects are
                 built from the ground up, from planning and designing all the
