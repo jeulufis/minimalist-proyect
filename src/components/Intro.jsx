@@ -18,7 +18,7 @@ function Intro() {
         data-aos="fade-up"
         data-aos-duration="2300"
       >
-        <div className="flex flex-col mb-10 mx-3">
+        <div className="flex flex-col mx-3">
           <div className="flex justify-center items-center">
             <div className="flex flex-col w-full md:w-8/12">
               <div className="bg-[#f5efe8] text-center p-3 text-sm md:text-base rounded-md dark:bg-[#313133]">
@@ -30,7 +30,7 @@ function Intro() {
                 className="h-32 w-32 object-cover rounded-full m-5 border-2 self-center "
               />
 
-              <h1 className="md:text-3xl md:mb-3 tracking-wide font-semibold text-2xl">
+              <h1 className="md:text-3xl md:mb-3 tracking-wide font-bold text-2xl">
                 Juan Eulufí Salazar ✋🌟
               </h1>
 
