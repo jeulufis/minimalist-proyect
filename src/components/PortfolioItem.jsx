@@ -45,7 +45,7 @@ function PortfolioItem({
             {parrafoPortfolio}
           </div>
         )}
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-center text-xs ">
+        <p className="flex flex-wrap gap-2 flex-row items-center justify-center  text-sm md:text-base ">
           {stack &&
             stack.map((item) => (
               <>
