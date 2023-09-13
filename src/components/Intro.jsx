@@ -39,13 +39,18 @@ function Intro() {
               </p>
               <p className=" text-sm md:text-base tracking-wide md:tracking-wider dark:text-[#dcb98a] text-pink-500">
                 <Typewriter
-                  words={["( Software Engenieer / Developer / Designer )"]}
-                  loop={1}
+                  words={[
+                    "Software Engenieer",
+                    "Full-Stack Developer",
+                    "Front-End Dev",
+                    "Back-End Dev",
+                  ]}
+                  loop={true}
                   cursor
-                  cursorStyle="_"
+                  cursorStyle="|"
                   typeSpeed={70}
-                  deleteSpeed={10}
-                  delaySpeed={3000}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
                 />
               </p>
 
